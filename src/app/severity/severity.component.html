@@ -1,0 +1,57 @@
+<!-- Header -->
+<app-header></app-header>
+
+<div class="card result-card" >
+    <div class="card-header" >
+      <h2 class="text-center text-light font-weight-bold pt-2">Audit-Result</h2>
+    </div>
+    <div class="card-body" >
+      <h5 class="card-title">Project-Details</h5>
+      <table class="table table-dark dark-table">
+        <thead>
+            <tr>
+                <th>Audit-Tracking-Id</th>
+                <th>Project-Manager Name</th>
+                <th>Project Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span>{{id}}</span>
+                </td>
+                <td>
+                    <span>{{mname}}</span>
+                </td>
+                <td>
+                    <span>{{pname}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="card-body" >
+        <h5 class="card-title ">Audit-Details</h5>
+        <table class="table table-dark dark-table">
+            <thead>
+                <tr>
+                    <th>Project Execution Status</th>
+                    <th>Remedial Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="status-btn m-auto" [style.background]="status" disabled><span>{{status}}</span></div>
+                    </td>
+                    <td>
+                        <span>{{remedy}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <a class="endbtn" routerLink="../checklist" ><button class="btn btn-info">Back to Checklist</button></a>
+
+<!-- </div> -->
