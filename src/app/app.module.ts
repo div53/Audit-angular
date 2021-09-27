@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AuthenticationService } from './Services/authentication.service';
 import { ServerErrorComponent } from './server-error/server-error.component';
+import { UnauthorizedErrorComponent } from './unauthorized-error/unauthorized-error.component';
 
 
 const appRoutes: Routes=[
@@ -29,6 +30,7 @@ const appRoutes: Routes=[
     ChecklistComponent,
     SeverityComponent,
     ServerErrorComponent,
+    UnauthorizedErrorComponent,
 
   ],
   imports: [

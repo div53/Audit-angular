@@ -153,11 +153,12 @@ export class Severity{
       },error=>{
         if(error.status=="401"){
           // alert("Inavlid Login");
-          this.route.navigate(['server-error']);
+          // this.route.navigate(['server-error']);
         }
         else{
           alert("uncexpected error occured");
-          this.route.navigate(['server-error']);
+          //route here
+          // this.route.navigate(['server-error']);
         }
       });
     }

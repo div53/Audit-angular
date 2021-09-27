@@ -47,7 +47,17 @@ export class GetQuestionsList{
     getQuestions(auditVal:number){
       this.http.get(this.queSerUrl,this.headers).subscribe(response=>{
         console.log(response);
-      })
+      },error=>{
+        if(error.status=="401"){
+          //route here to 405 error unthorized error
+          // alert("unthorized error");
+          // this.route.navigate(['server-error']);
+        }
+        else{
+          alert("uncexpected error occured");
+          // this.route.navigate(['server-error']);
+        }
+      });
     }
 
 
