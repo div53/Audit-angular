@@ -12,7 +12,7 @@ section{
     width: 100%;
     height: 100%;
     color: #fff;
-} 
+}
 .userIn {
     background-color: #fff;
     border: 2px solid black;
@@ -127,8 +127,8 @@ section{
 .checkbtn  {
     background-color: green;
 }
-.checkbtn:focus {     
-    background-color:yellow;    
+.checkbtn:focus {
+    background-color:yellow;
 }
 .checkbtn:visited {
     background-color: blue;
@@ -148,7 +148,8 @@ section{
 }
 
 .main{
-    background: linear-gradient(to right, #b92b27, #1565c0);
+    /* background: linear-gradient(to right, #b92b27, #1565c0); */
+    background: linear-gradient(to right, #16BFFD, #CB3066);
     position: absolute;
     z-index: -1;
     top:0px;
@@ -173,8 +174,8 @@ section{
 
 .selectTag{
     position:absolute;
-     top:100px; 
-     left:770px; 
+     top:100px;
+     left:770px;
     width: 270px;
     height: 5vh;
 }
@@ -183,7 +184,7 @@ section{
     top:150px;
     left:770px;
     width: 270px;
-    height: 5vh; 
+    height: 5vh;
 }
 .tab1{
     /* text-align: center; */

@@ -19,7 +19,7 @@ export class Severity{
     severityUrl="https://auditseveritymicrosvc.azurewebsites.net/api/AuditSeverity/AuditSeverity/";
     private token= localStorage.getItem('auditToken');
 
-    // token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjAiLCJuYmYiOjE2MzI2ODYxODIsImV4cCI6MTYzMzI5MDk4MiwiaWF0IjoxNjMyNjg2MTgyfQ.kcmGk2HRVFZ8bcp_0EKTOc7395TbxAaeic-Q7sYmqUU";
+
 
     requestData=
     {
@@ -57,7 +57,7 @@ export class Severity{
     headers={
       headers: new HttpHeaders({
           'Content-Type': 'application/json',
-          'Authorization':"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjAiLCJuYmYiOjE2MzI2ODYxODIsImV4cCI6MTYzMzI5MDk4MiwiaWF0IjoxNjMyNjg2MTgyfQ.kcmGk2HRVFZ8bcp_0EKTOc7395TbxAaeic-Q7sYmqUU"
+          'Authorization':`Bearer ${this.token}`
       })
     }
 
@@ -148,7 +148,7 @@ export class Severity{
       // console.log("from local method"+!!this.getTokFromlocal());
 
       this.http.post(this.severityUrl,this.requestData,this.headers).subscribe(response=>{
-        console.log("Bearer "+"`$(this.token)`");
+
         console.log(response);
       },error=>{
         if(error.status=="401"){

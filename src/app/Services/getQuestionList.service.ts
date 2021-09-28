@@ -9,11 +9,13 @@ export class GetQuestionsList{
 
   constructor(private http:HttpClient){}
   queSerUrl="https://auditchecklistmicrosvc.azurewebsites.net/api/AuditChecklist/GetAuditTypeQuestions/1/";
-  token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjAiLCJuYmYiOjE2MzI2ODYxODIsImV4cCI6MTYzMzI5MDk4MiwiaWF0IjoxNjMyNjg2MTgyfQ.kcmGk2HRVFZ8bcp_0EKTOc7395TbxAaeic-Q7sYmqUU";
+  // token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjAiLCJuYmYiOjE2MzI2ODYxODIsImV4cCI6MTYzMzI5MDk4MiwiaWF0IjoxNjMyNjg2MTgyfQ.kcmGk2HRVFZ8bcp_0EKTOc7395TbxAaeic-Q7sYmqUU";
+  private token= localStorage.getItem('auditToken');
+
   headers={
     headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        'Authorization':`Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjAiLCJuYmYiOjE2MzI2ODYxODIsImV4cCI6MTYzMzI5MDk4MiwiaWF0IjoxNjMyNjg2MTgyfQ.kcmGk2HRVFZ8bcp_0EKTOc7395TbxAaeic-Q7sYmqUU`
+        'Authorization':`Bearer ${this.token}`
     })
   }
 
