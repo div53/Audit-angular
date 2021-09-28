@@ -1,5 +1,7 @@
 # AuditNew
 
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ## Development server
@@ -25,3 +27,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+![image](https://user-images.githubusercontent.com/64982863/135023110-296df860-4702-4c42-b687-cf13ad1f0884.png)
+
+##checklist
+![image](https://user-images.githubusercontent.com/64982863/135023148-949734c0-3e3a-4076-92d0-fd93140a7f09.png)
